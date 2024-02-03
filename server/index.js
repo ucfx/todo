@@ -14,6 +14,9 @@ const app = express();
 
     app.use(express.json());
 
+    const taskRouter = require("./Routes/TaskRouter");
+    app.use("/task", taskRouter);
+
     app.listen(port, () => {
       console.log(`Server is running on port ${port}`);
     });
