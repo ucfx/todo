@@ -27,11 +27,9 @@ const TaskList = () => {
         }}
       >
         <ul>
-          {sortedTasks
-            .sort((a, b) => a.done - b.done)
-            .map((task, index) => (
-              <Task key={task._id} task={task} index={index} />
-            ))}
+          {sortedTasks.map((task, index) => (
+            <Task key={task._id} task={task} index={index} />
+          ))}
         </ul>
       </div>
     </>
