@@ -1,0 +1,40 @@
+// This file to test the API using rest client (Extension ID: humao.rest-client)
+
+// Get all tasks
+GET http://localhost:5000/task
+
+###
+
+// Create a new task
+POST http://localhost:5000/task
+Content-Type: application/json
+
+{
+    "description": "Task 0"
+}
+
+###
+
+// Update a task by id (description)
+PUT http://localhost:5000/task/<id>
+Content-Type: application/json
+
+{
+    "description": "Task 0 updated"
+}
+
+###
+
+// Update a task by id (done)
+PUT http://localhost:5000/task/<id>
+Content-Type: application/json
+
+{
+    "done": true
+}
+
+###
+
+// Delete a task by id
+
+DELETE http://localhost:5000/task/<id>
