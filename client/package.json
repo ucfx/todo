@@ -5,6 +5,7 @@
   "description": "TodoList application built using the MERN stack (MongoDB, Express.js, React, and Node.js), enhanced with Tailwind CSS for modern styling and UI components. The application leverages React for the frontend interface, Express.js for server-side logic, MongoDB for data storage, and custom hooks for streamlined state management and functionality. Tailwind CSS provides a utility-first approach to styling, facilitating rapid development and consistent design across the application.",
   "type": "module",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
